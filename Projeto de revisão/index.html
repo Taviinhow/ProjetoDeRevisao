@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de revisão</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source media="(min-width:52.875em)" srcset="assets/astronautBigger.png">
+            <img src="assets/astronaut.png" alt="Astronauta no espaço">
+        </picture>
+        <div>
+            <h1>Explore sem limites</h1>
+            <p>Porque o aprendizado é contínuo</p>
+            <img src="assets/arrow.svg" alt="Seta na cor roxa apontando para baixo">
+        </div>
+    </header>
+
+    <main>
+        <div class="firstHalf">
+            <section class="articles">
+                <figure class="item">
+                    <picture>
+                        <source media="(min-width:52.875em)" srcset="assets/yellowPlanetBigger.png">
+                        <img src="assets/yellowPlanet.png" alt="Planeta amarelo">
+                    </picture>
+                    <figcaption class="text">
+                        <h2>Não pare nunca</h2>
+                        <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". 
+                            Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+                    </figcaption>
+                </figure>
+            
+                <figure class="item" style ="--delay: .6s">
+                    <picture>
+                        <source media="(min-width:52.875em)" srcset="assets/bluePlanetBigger.png">
+                        <img src="assets/bluePlanet.png" alt="Planeta azul">
+                    </picture>
+                    <figcaption class="text">
+                        <h2>Só volta</h2>
+                        <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. 
+                            Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+                    </figcaption>
+                </figure>
+            
+                <figure class="item" style ="--delay: .8s">
+                    <picture>
+                        <source media="(min-width:52.875em)" srcset="assets/pinkPlanetBigger.png">
+                        <img src="assets/pinkPlanet.png" alt="Planeta rosa">
+                    </picture>
+                    <figcaption class="text">
+                        <h2>Siga seu ritmo</h2>
+                        <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. 
+                            Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <div class="secondHalf">
+            <form id="myForm">
+                <fieldset>
+                    <div class="fieldsetWrapper">
+                        <legend>Entre em contato</legend>
+
+                        <div class="inputWrapper">
+                            <label for="userName">Seu nome</label>
+                            <input type="text" id="username" placeholder="Seu nome">
+                        </div>
+
+                        <div class="inputWrapper">
+                            <label for="userEmail">Email</label>
+                            <input type="email" id="userEmail" placeholder="Email">
+                        </div>
+
+                        <div class="inputWrapper">
+                            <label for="userMessage">Digite sua mensagem aqui...</label>
+                            <textarea id="text" placeholder="Digite sua mensagem aqui..."></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button class="button" form="myForm">Enviar mensagem</button>
+            </form>
+
+            <picture>
+                <source media="(max-width:52.875em)" srcset="pinkStars.png">
+                <img src="assets/pinkStars.png" alt="">
+            </picture>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 - Rocketseat Explorer</p>
+    </footer>
+    
+</body>
+</html>
